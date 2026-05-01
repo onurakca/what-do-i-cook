@@ -36,7 +36,7 @@ async function acceptFood() {
 
     await fetch(`/api/cook/${encodeURIComponent(currentFood.name)}`, { method: 'POST' });
 
-    document.getElementById('food-display').textContent = `${currentFood.name} - logged!`;
+    document.getElementById('food-display').textContent = `${currentFood.name} - Logged!`;
     document.getElementById('btn-cook').style.display = 'inline-block';
     document.getElementById('btn-next').style.display = 'none';
     document.getElementById('btn-accept').style.display = 'none';

@@ -2,11 +2,15 @@
   "foods": [
     {
       "name": "Bezelye",
-      "last_cooked": 1777661311.6348116
+      "last_cooked": 1777664934.4999511
     },
     {
       "name": "Nohut",
-      "last_cooked": 0
+      "last_cooked": 1777664934.0763535
+    },
+    {
+      "name": "Bezelye2",
+      "last_cooked": 1777664934.8789852
     }
   ]
 }
