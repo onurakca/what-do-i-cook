@@ -3,10 +3,10 @@ Description=What Do I Cook? App
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /home/onur/Documents/repo/what-do-i-cook/app.py
-WorkingDirectory=/home/onur/Documents/repo/what-do-i-cook
+ExecStart=/usr/bin/python3 /repo/what-do-i-cook/app.py
+WorkingDirectory=/repo/what-do-i-cook
 Restart=always
-User=onur
+User=pi
 Environment=PYTHONUNBUFFERED=1
 
 [Install]
