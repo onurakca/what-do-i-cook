@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Do I Cook?</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>what do i cook</h1>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="cook">Cook</button>
+            <button class="tab" data-tab="manage">Manage</button>
+        </div>
+
+        <div id="cook-tab" class="tab-content active">
+            <div class="cook-area">
+                <div id="food-display">click "pick" to start</div>
+                <div class="cook-actions">
+                    <button id="btn-cook" class="btn btn-primary">pick</button>
+                    <button id="btn-next" class="btn btn-secondary" style="display: none;">next</button>
+                    <button id="btn-accept" class="btn btn-success" style="display: none;">accept</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="manage-tab" class="tab-content">
+            <div class="add-form">
+                <input type="text" id="food-input" placeholder="Enter food name...">
+                <button id="btn-add" class="btn btn-primary">Add</button>
+            </div>
+            <ul id="food-list"></ul>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

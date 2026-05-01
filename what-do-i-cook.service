@@ -1,0 +1,13 @@
+[Unit]
+Description=What Do I Cook? App
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/onur/Documents/repo/what-do-i-cook/app.py
+WorkingDirectory=/home/onur/Documents/repo/what-do-i-cook
+Restart=always
+User=onur
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
